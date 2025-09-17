@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>مشروع جامعي — موقع شخصي (5-7 صفحات)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">م</div>
+      <div>
+        <div style="font-weight:700;font-size:18px">مشروع جامعي — موقع شخصي</div>
+        <div style="font-size:13px;color:var(--muted)">مكوّن من 6 صفحات، مع تأثيرات CSS وتسجيل دخول (مقترح)</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#" onclick="showPage('home',event)" id="nav-home" class="active">الصفحة الرئيسية</a>
+      <a href="#" onclick="showPage('about',event)" id="nav-about">عني</a>
+      <a href="#" onclick="showPage('projects',event)" id="nav-projects">المشاريع</a>
+      <a href="#" onclick="showPage('gallery',event)" id="nav-gallery">المعرض</a>
+      <a href="#" onclick="showPage('contact',event)" id="nav-contact">اتصل بي</a>
+      <a href="#" onclick="showPage('login',event)" id="nav-login">تسجيل / دخول</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HOME (page 1) -->
+    <section id="home" class="page active">
+      <div class="home-grid">
+        <aside class="card profile">
+          <!-- ضع صورتك هنا داخل مجلد images باسم profile.jpg -->
+          <img src="profile.jpg" alt="صورتي" id="profileImg"
+            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'400\\' height=\\'400\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%230a1220\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-size=\\'20\\' fill=\\'%239fb0d6\\'>ضع صورتك هنا / images/profile.jpg</text></svg>'" />
+          <h2 id="profileName">ماجد عبدالله شافعه</h2>
+          <p id="profileRole">طالب جامعي — علوم حاسوب</p>
+
+          <div class="stats">
+            <div class="stat">
+              <h3>3</h3>
+              <p>مشاريع</p>
+            </div>
+            <div class="stat">
+              <h3>6</h3>
+              <p>صفحات جاهزة</p>
+            </div>
+            <div class="stat">
+              <h3>4.0</h3>
+              <p>تقييم (اختياري)</p>
+            </div>
+          </div>
+        </aside>
+
+        <div>
+          <div class="card">
+            <h3>نبذة قصيرة</h3>
+            <p class="hint">الذي يميزنا عن غيرنا اننا نتعلم لنخدم الوطن من خلال المشروع القراني الذي نحرك على اساسة
+              لنكون لبنة صالحة تحمل القضايا المركزية وعلى راسها المقدسات الاسلامية وبوصلتنا القدس
+            </p>
+            <p style="color:var(--muted)">الهدف من المشروع بداية العمل في المشاريع الصغيرة لتكون بدايه العمل والتطوير
+              بإذن الله وذلك بواسطة التالي: (HTML، CSS،
+              JavaScript)</p>
+          </div>
+
+          <div style="height:16px"></div>
+
+          <div class="main-cards">
+            <div class="card">
+              <h4>المهارات</h4>
+              <ul style="color:var(--muted)">
+                <li>HTML5 — بنية صفحات الويب</li>
+                <li>CSS3 — تنسيق واستجابات</li>
+                <li>JavaScript — تفاعل الصفحة</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h4>التفاصيل التقنية</h4>
+              <p style="color:var(--muted)">الملف هذا هو صفحة واحدة بمناطق متعددة تعمل كصفحات داخلية عبر JavaScript
+                (ممتازة لتسليم مشروع جامعي بدون إعداد خادم).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT (page 2) -->
+    <section id="about" class="page">
+      <div class="card">
+        <h2>عني</h2>
+        <p class="hint"><b> طالب في كلية الحاسوب، مهتم بتطوير الويب، أحب العمل بالمشاريع الصغيرة وانظر الى المستقبل
+            بطموح وامل كبير وذلك سيتحقق من خلال التعاون الجهود المبذولة للمعلمين في الكلية والتعاون مع زملائي والعمل
+            المشترك</b>
+        </p>
+        <p style="color:var(--muted)"><b>لان الاهداف والغايات للوصول للمواقع المتقدمة والكبيرة </b></p>
+      </div>
+    </section>
+
+    <!-- PROJECTS (page 3) -->
+    <section id="projects" class="page">
+      <div class="card">
+        <h2>المشاريع</h2>
+        <p class="hint">أدرج ما لا يقل عن 3 مشاريع مع وصف قصير وصورة إن وجدت.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px">
+          <div class="card">
+            <h4>مشروع 1</h4>
+            <p style="color:var(--muted)">وصف مختصر للمشروع والأدوات المستخدمة.</p>
+          </div>
+          <div class="card">
+            <h4>مشروع 2</h4>
+            <p style="color:var(--muted)">وصف مختصر للمشروع والأدوات المستخدمة.</p>
+          </div>
+          <div class="card">
+            <h4>مشروع 3</h4>
+            <p style="color:var(--muted)">وصف مختصر للمشروع والأدوات المستخدمة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY (page 4) -->
+    <section id="gallery" class="page">
+      <div class="card">
+        <h2>المعرض</h2>
+        <div class="gallery" style="margin: top 12  px">
+          <!-- ضع صور في مجلد images وغيّر المسارات كما تريد -->
+          <img src="s2.jpg" alt="photo1" onerror="this.style.opacity=.25">
+          <img src="s3.JPG" alt="photo2" onerror="this.style.opacity=.25">
+          <img src="s4.jpg" alt="photo3" onerror="this.style.opacity=.25">
+          <img src="profile.jpg" alt="photo4" onerror="this.style.opacity=.25">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (page 5) -->
+    <section id="contact" class="page">
+      <div class="card">
+        <h2>اتصل بي</h2>
+        <form id="contactForm">
+          <div class="row">
+            <input type="text" id="cname" placeholder="الاسم" required />
+            <input type="email" id="cemail" placeholder="البريد الإلكتروني" required />
+          </div>
+          <div style="height:8px"></div>
+          <textarea id="cmessage" rows="6" placeholder="رسالتك..."></textarea>
+          <div style="height:10px"></div>
+          <button type="submit">إرسال</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- LOGIN (page 6) -->
+    <section id="login" class="page">
+      <div class="card login-wrap">
+        <h2>تسجيل / دخول</h2>
+        <p class="hint">استخدم بيانات الاختبار المرفقة أو عدّلها داخل ملف script.</p>
+        <form id="loginForm">
+          <div style="margin-top:12px">
+            <input type="text" id="username" placeholder="اسم المستخدم" required />
+          </div>
+          <div style="height:8px"></div>
+          <div>
+            <input type="password" id="password" placeholder="كلمة المرور" required />
+          </div>
+          <div style="height:12px"></div>
+          <button type="submit">دخول</button>
+          <p class="hint">اسم مستخدم تجريبي: <strong>ali</strong> — كلمة المرور: <strong>123</strong></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- DASHBOARD (Protected page) -->
+    <section id="dashboard" class="page">
+      <div class="card">
+        <h2>لوحة التحكم</h2>
+        <p class="hint">هذه الصفحة محمية — يجب تسجيل الدخول لعرضها.</p>
+        <div id="dashContent"></div>
+        <div style="height:12px"></div>
+        <button onclick="logout()">تسجيل خروج</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 — مشروع جامعي. يمكنك تخصيص النص والروابط.
+  </footer>
+
+  <script>
+    // ----- بيانات تسجيل الدخول للاختبار (ببساطة في الواجهة فقط) -----
+    // لتأمين حقيقي احتجت خادم (Back-end) وقاعدة بيانات — هذا مجرد مثال تعليمي.
+    const CREDENTIALS = { user: 'ali', pass: '123' };
+
+    // SPA page switcher
+    function showPage(id, e) {
+      if (e) e.preventDefault();
+      // Protect dashboard
+      if (id === 'dashboard' && !isLoggedIn()) {
+        id = 'login';
+        alert('الرجاء تسجيل الدخول للوصول إلى لوحة التحكم.');
+      }
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      const el = document.getElementById(id);
+      if (el) el.classList.add('active');
+      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+      const navId = 'nav-' + id;
+      const navEl = document.getElementById(navId);
+      if (navEl) navEl.classList.add('active');
+    }
+
+    // Login handling (client-only)
+    function isLoggedIn() { return localStorage.getItem('loggedIn') === '1' }
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const u = document.getElementById('username').value.trim();
+      const p = document.getElementById('password').value;
+      if (u === CREDENTIALS.user && p === CREDENTIALS.pass) {
+        localStorage.setItem('loggedIn', '1');
+        alert('تم تسجيل الدخول بنجاح');
+        showPage('dashboard');
+        renderDash();
+      } else {
+        alert('اسم المستخدم أو كلمة المرور غير صحيحة');
+      }
+    });
+
+    function logout() {
+      localStorage.removeItem('loggedIn');
+      alert('تم تسجيل الخروج');
+      showPage('home');
+    }
+
+    function renderDash() {
+      const content = document.getElementById('dashContent');
+      content.innerHTML = '';
+      const box = document.createElement('div');
+      box.innerHTML = `
+        <p style="color:var(--muted)">مرحبًا ${CREDENTIALS.user}! هذه لوحة تحكم مبسطة تعرض معلوماتك ويمكنك توسيعها بإضافة وظائف حقيقية عبر الخادم.</p>
+        <ul style="color:var(--muted)"><li>إدارة المشاريع</li><li>تحميل صور</li><li>الإعدادات</li></ul>
+      `;
+      content.appendChild(box);
+    }
+
+    // Contact form (local demo)
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('cname').value.trim();
+      const email = document.getElementById('cemail').value.trim();
+      const msg = document.getElementById('cmessage').value.trim();
+      if (!name || !email) { alert('الرجاء تعبئة الاسم والبريد'); return; }
+      alert('شكرًا ' + name + '! تم استلام رسالتك (محليًا فقط).');
+      this.reset();
+    });
+
+    // small helper to allow direct link to page via hash
+    window.addEventListener('load', () => {
+      const h = location.hash.replace('#', '');
+      if (h) showPage(h);
+      if (isLoggedIn()) renderDash();
+    });
+
+    // Optional: تغيير الاسم المعروض عبر الكود (يمكن للمستخدم تعديله)
+    // يمكنك تغيير النص التالي ليتناسب مع بياناتك الحقيقية
+    document.getElementById('profileName').textContent = 'ماجد عبدالله شافعه';
+    document.getElementById('profileRole').textContent = 'طالب — تخصصك علوم حاسوب';
+  </script>
+</body>
+
+</html>
